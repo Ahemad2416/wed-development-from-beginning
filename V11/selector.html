@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECTORS</title>
+    <style>
+        /* element selector */
+         div {
+            background-color: blue;
+            color: yellow;
+        }
+
+        /* class selector */
+        .green {
+            background: skyblue;
+            color: pink;
+        }
+
+        /* id selector */
+        #red {
+            background-color: blueviolet;
+            color: aqua;
+        }
+
+        /* child selector */
+        div>p {
+            background-color: rgb(131, 131, 67);
+            color: brown;
+        }
+
+        /* descendant selector */
+        main p {
+            background-color: lightcoral;
+            color: blueviolet;
+        }
+
+        /* universal selector */
+        * {
+            margin: 0;
+            padding: 0%;
+        }
+
+        /* psuedo selector */
+        a:visited {
+            color: pink;
+        }
+
+        a:link {
+            color: green;
+        }
+
+        a:active {
+            color: red;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        p:first-child {
+            color: blueviolet;
+        }
+    </style>
+
+</head>
+
+<body bgcolor="#000">
+
+    <h1 style="color: pink;">There Are Some Selectors</h1>
+    <div>
+        this is div selector
+    </div>
+
+    <div class="green">
+        this is class selector
+    </div>
+
+    <div id="red">
+        this is id selector
+    </div>
+
+    <div>
+        <p>
+            this is child selector
+        </p>
+    </div>
+
+    <main>
+        <article>
+            <p>
+                this is descendant selector
+            </p>
+        </article>
+    </main>
+
+    <main>
+        <a target="_blank" href="https://www.google.com">https://www.google.com</a>
+        <a target="_blank" href="https://www.spotify.com">https://www.spotify.com</a>
+    </main>
+    <span>
+        <p>i am the first</p>
+        <p>i am the second</p>
+    </span>
+
+</body>
+
+</html>

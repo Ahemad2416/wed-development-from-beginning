@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css specificity</title>
+    <style>
+        h1 {
+            color: aqua;
+        }
+
+        .aku {
+            color: red !important;
+        }
+
+        .sayang {
+            color: blue;
+        }
+
+        .chinta {
+            color: yellow;
+        }
+
+        .kamu {
+            color: brown;
+        }
+        h2{
+            color: blue;
+            text-decoration: underline;
+            text-decoration-style: wavy;
+            text-align: center;
+        }
+        h3{
+            color:thistle ;
+            text-align: center;
+            font-weight: 100;
+            font-size: 25px;
+        }
+        /* [data-x=a] {
+            color: green;
+        } */
+    </style>
+</head>
+
+<body bgcolor="black">
+    <div>
+        <h1 class="aku sayang chinta kamu" data-x=a style="color: purple;">Hey This Is Specificity</h1>
+    </div>
+
+    <h2>The order of Specificity</h2>
+    <h3>important&gt;inline css&gt;Id&gt;Class or attribute&gt;element&gt;Universal</h3>
+
+
+</body>
+
+</html>
