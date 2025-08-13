@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Media query</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        @media only screen and (orientation: portrait){
+            body{
+                background-color: black;
+            }
+
+            
+        }
+        @media only screen and (min-width:455px) {
+            body{
+                background-color: blueviolet;
+            }
+            .boxes{
+                display: flex;
+            }
+            
+        }
+        
+        .box{
+            width: 344px;
+            height: 344px;
+            border: 2px solid purple;
+            margin: 3px;
+            padding: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        Hey my body is red
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>
