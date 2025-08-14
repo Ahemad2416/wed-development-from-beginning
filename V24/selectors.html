@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Css Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: rgb(209, 137, 137);
+        }
+        .box::first-line{
+            color: brown;
+        }
+        .boxes{
+            color: purple;
+        } */
+         p,a,.box , [data-color="primary"]{
+            padding-top: 20px;
+            border: 2px solid black;
+         }
+         .box:nth-child(odd){
+            background-color: blueviolet;
+         }
+         .box:nth-last-child(2){
+            background-color: pink;
+         }
+         .boxes::before{
+            content:"hey i am the first";
+         }
+          .boxes::after{
+            content:"hey i am the last";
+         }
+         ::selection{
+            background-color: black;
+            color: peru;
+         }
+         .box::first-letter{
+            color:blue;
+         }
+         input::placeholder{
+            color: aqua;
+         }
+         
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, fuga!</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita unde asperiores incidunt ipsa recusandae veritatis beatae magni cum accusamus dignissimos, pariatur ea eum sit fugit placeat consectetur sequi similique vel? Quam doloremque ipsum nulla velit suscipit distinctio ab quasi id quibusdam fuga pariatur explicabo ratione, eveniet rem molestias, dignissimos excepturi.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iste ducimus? Quia minima dolore accusamus.</div>
+        <input type="text" placeholder="Type your text here">
+    </div>
+
+    
+</body>
+</html>
