@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rgb(210, 166, 210);
+    height: 35px;
+    width: 100%;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    padding-right: 20px;
+    padding-top: 10px;
+    margin-left: 20px;
+    list-style: none;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    background-color: green;
+    height: 580px;
+    width: 98%;
+    margin: auto ;
+    margin-top: 15px;
+    position: relative;
+}
+.box1{
+    height: 500px;
+    width: 600px;
+    background-color: rgb(216, 203, 153);
+    position: absolute;
+    top: 40px;
+    left: 100px;
+}
+.box2{
+    height: 500px;
+     width: 600px;
+    background-color: rgb(54, 134, 183);
+    position: absolute;
+    top: 40px;
+    left: 790px;
+}
+.web{
+    border: 2px solid black;
+    border-radius: 30px;
+    height: 200px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+.cont{
+    font-size: 76px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.image img{
+    width: 40px;
+    height: 40px;
+    /* background-image: url(../Exercise\ 5/.); */
+    position: fixed;
+    top: 630px;
+    left:97%;
+    /* justify-content: end; */
+}
+.foot{
+    height: 70px;
+    width: 100%;
+    background-color: cadetblue;
+    margin-top: 20px;
+}
